@@ -1,7 +1,7 @@
 <script type="text/discourse-plugin" version="0.8">
 const { iconNode } = require("discourse-common/lib/icon-library");
 
-api.decorateWidget("header-buttons:after", helper => {
+api.decorateWidget("below-site-header-outlet.search-banner.ember-view:after", helper => {
   if (!api.getCurrentUser()) return;
 
   let container = api.container,
